@@ -1,0 +1,126 @@
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+body {
+    background: url('https://source.unsplash.com/1920x1080/?nature,abstract') no-repeat center center/cover;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 420px;
+    margin: auto;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+
+h2 {
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+label {
+    font-weight: 400;
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+    color: #444;
+}
+
+
+input,
+button {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+input {
+    background: rgba(255, 255, 255, 0.3);
+    color: #222;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input::placeholder {
+    color: rgba(50, 50, 50, 0.5);
+}
+
+input:focus {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+button {
+    background: linear-gradient(90deg, #0077ff, #0055cc);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 5px 15px rgba(0, 119, 255, 0.3);
+}
+
+
+#slots {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.slot {
+    padding: 12px 18px;
+    margin: 6px;
+    background: linear-gradient(90deg, #56ccf2, #2f80ed);
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-size: 14px;
+}
+
+.slot:hover {
+    background: linear-gradient(90deg, #2f80ed, #56ccf2);
+    transform: scale(1.1);
+}
+
+.slot.selected {
+    background: linear-gradient(90deg, #ff758c, #ff7eb3);
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+        width: 90%;
+    }
+}
