@@ -9,7 +9,7 @@ Available time slots are 30-minute intervals between 10:00 AM and 5:00 PM.
 
 ```sh
 # Clone the repository
-git clone https://github.com/Rdws/test.git
+https://github.com/RakhilVR/test.git
 
 # Navigate to the project directory
 cd bookingServer
